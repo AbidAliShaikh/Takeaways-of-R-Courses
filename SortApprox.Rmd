@@ -1,0 +1,69 @@
+---
+title: "SortingApproximately"
+author: "Abid Ali Shaikh"
+date: "12/31/2021"
+output: 
+  html_document:
+    code_folding: show
+    theme:
+      bg: "#202123"
+      fg: "#B8BCC2"
+      primary: "#EA80FC"
+      base_font:
+        google: Prompt
+      heading_font:
+        google: Proza Libre
+      version: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{css}
+pre code {
+  font-size: 14px; /* Adjust the font size as desired */
+}
+```
+
+### Sampling & Re-grouping 
+
+```{r grouping by approximate sorting, size=16}
+names <- sample(c(
+  "John", "Jon", "Jhon", "Jonh",
+  "Michael", "Micheal", "Michel",
+  "Emily", "Emili", "Emely", "Emiley",
+  "Sarah", "Sara", "Sera", "Serah",
+  "Matthew", "Mathew", "Mathhew",
+  "Jessica", "Jessika", "Jesica", "Jessicah",
+  "Daniel", "Daniele", "Danial",
+  "Elizabeth", "Elisabeth", "Elisabet",
+  "David", "Davi", "Davide",
+  "Jennifer", "Jennipher", "Jenifer",
+  "Christopher", "Cristopher", "Christoper",
+  "Amanda", "Amandah", "Amandaa",
+  "Andrew", "Andrw", "Andew",
+  "Stephanie", "Stephany", "Stephaine",
+  "Joshua", "Josh", "Jshua"
+), replace = FALSE)
+
+group <- function(names)
+{
+
+val2=NULL
+for (i in names)
+{
+  val=agrep(i,names)
+   val2=c(val2,val)
+   
+}
+val2=unique(val2)
+
+
+return(names[val2])
+}
+
+group(names)
+
+```
+
