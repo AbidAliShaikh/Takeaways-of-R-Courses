@@ -1,26 +1,26 @@
 {
-    "id": "A18BF39B",
+    "id": "F6C06A46",
     "path": "D:/MyWebsiteforRCourses/Takeaways-of-R-Courses/_site.yml",
     "project_path": "_site.yml",
     "type": "yaml",
-    "hash": "2525711407",
+    "hash": "668261703",
     "contents": "",
     "dirty": false,
-    "created": 1688797397009.0,
+    "created": 1688806260268.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 5,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "4,17",
-        "scrollLine": "0"
+        "cursorPosition": "22,20",
+        "scrollLine": "17"
     },
     "folds": "",
-    "lastKnownWriteTime": 1688800404,
+    "lastKnownWriteTime": 1688808028,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1688800404,
+    "last_content_update": 1688808028505,
     "read_only": false,
     "read_only_alternatives": []
 }
