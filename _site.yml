@@ -2,7 +2,7 @@ name: "R Courses"
 title: "Takeaways of R Courses"
 description: |
   Takeaways of R Courses
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
@@ -19,7 +19,8 @@ navbar:
           href: NewThemic.html
         - text: "Courses"
           menu:
-            - text: "Importing data in Tidyverse"
+            - text: "WebScrapping"
+              href: webscrapping.html
 output: 
   distill::distill_article:
     toc:    true
